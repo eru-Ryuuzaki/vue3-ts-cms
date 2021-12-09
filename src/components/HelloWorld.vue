@@ -47,7 +47,7 @@
       </li>
       <li>
         <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat hhh</a
+          >Community Chat</a
         >
       </li>
       <li>
