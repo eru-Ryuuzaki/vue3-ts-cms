@@ -11,6 +11,9 @@ import { globalRegister } from "./global";
 import router from "./router";
 import store from "./store";
 
+// import "./service/axios_demo";
+import eruRequest from "./service/index";
+
 const app = createApp(App);
 
 // globalRegister(app);
@@ -20,3 +23,8 @@ app.use(router);
 app.use(store);
 // app.use(ElementPlus);
 app.mount("#app");
+
+eruRequest.request({
+  url: "/home/multidata",
+  method: "GET"
+});
