@@ -1,4 +1,4 @@
-import "element-plus/theme-chalk/base.css";
+import "element-plus/lib/theme-chalk/base.css";
 import { App } from "vue";
 // 局部引入
 import {
@@ -11,6 +11,7 @@ import {
   ElRadio
 } from "element-plus";
 const components = [
+  // 文件夹下面没有 src 文件的话好像不能引入
   ElAlert,
   ElAside,
   ElButton,

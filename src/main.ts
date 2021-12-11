@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 // 文件夹下的 index 文件可以省略，会自己去找
-import { registerApp } from "./global";
+import { globalRegister } from "./global";
 
 // 全局引入
 // import ElementPlus from "element-plus";
@@ -13,7 +13,8 @@ import store from "./store";
 
 const app = createApp(App);
 
-registerApp(app);
+// globalRegister(app);
+app.use(globalRegister); // 默认执行 globalRegister 并且传入 app
 
 app.use(router);
 app.use(store);
